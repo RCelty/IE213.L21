@@ -1,0 +1,42 @@
+# Get all brands
+GET http://localhost:3000/api/brands/
+
+
+
+###
+# Get brand by id
+GET http://localhost:3000/api/brands/609a29dc6542d153f86da754
+ 
+
+###
+# Create brand
+POST http://localhost:3000/api/brands/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGEzZjJkOGZkODQ2MDNlODM2NGI4YTYiLCJpYXQiOjE2MjE1MTM5NzR9.C7L2StI5sadC1kEZE0usbePBjpqlNIwe0xlvI8JbuE8
+
+{
+    "name": "iPhone",
+    "description": "Nhãn hiệu  điện thoại xịn",
+    "logo": null
+}
+
+
+###
+# Delete brand by id
+DELETE http://localhost:3000/api/brands/609a28c55d6c30515c8e4c70
+ 
+
+###
+# Update brand by id
+PUT http://localhost:3000/api/brands/609a29dc6542d153f86da754
+Content-Type: application/json
+
+{
+    "name": "iPhone",
+    "description": "Nhãn hiệu  điện thoại xịn",
+    "logo": null
+}
+     
+
+### 
+GET http://localhost:3000/api/test
